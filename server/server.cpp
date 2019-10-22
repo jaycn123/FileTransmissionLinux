@@ -21,7 +21,7 @@
 #include <netinet/in.h>
 #include <unistd.h>
 #include <arpa/inet.h>
-
+#include <signal.h>
 
 #define PORT 8087
 #define SERVER_IP "127.0.0.1"
@@ -204,6 +204,7 @@ void SplitString(const xstring& s, std::vector<xstring>& v, const xstring& c)
 
 int main()
 {
+	signal(SIGPIPE, SIG_IGN);
 	std::vector<std::string>m_vtFileList;
 	m_vtFileList.push_back("src/runtime.rar");
 	
