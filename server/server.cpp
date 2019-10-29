@@ -23,6 +23,10 @@
 #include <arpa/inet.h>
 #include <signal.h>
 
+#include <dirent.h>
+#include <sys/stat.h>
+
+
 #define PORT 8087
 #define SERVER_IP "127.0.0.1"
 #define BUFFER_SIZE 1024
@@ -64,7 +68,7 @@ std::vector<int>ClientScoketVec;
 
 void SplitString(const xstring& s, std::vector<xstring>& v, const xstring& c);
 uint64_t getFileSize(char* path);
-
+bool get_all_files(const std::string& dir_in, std::vector<std::string>& files);
 
 void DoSendData(int m_socket, std::vector<std::string>&filepath)
 {
@@ -206,7 +210,13 @@ int main()
 {
 	signal(SIGPIPE, SIG_IGN);
 	std::vector<std::string>m_vtFileList;
-	m_vtFileList.push_back("src/runtime.rar");
+	//m_vtFileList.push_back("src/runtime.rar");
+	get_all_files("src",m_vtFileList);
+	
+	for(auto it : m_vtFileList)
+	{
+		std::cout<<it<<std::endl;
+	}
 	
 	int m_socket = StartUp();
 	if (m_socket < 0)
@@ -244,3 +254,41 @@ uint64_t getFileSize(char* path)
 
 	return 0;
 }
+
+
+bool get_all_files(const std::string& dir_in, std::vector<std::string>& files) 
+{
+    if (dir_in.empty()) {
+        return false;
+    }
+    struct stat s;
+    stat(dir_in.c_str(), &s);
+    if (!S_ISDIR(s.st_mode)) {
+		std::string tpatch = "mkdir " + dir_in;
+		system(tpatch.c_str());
+        return false;
+    }
+    DIR* open_dir = opendir(dir_in.c_str());
+    if (NULL == open_dir) {
+        std::exit(EXIT_FAILURE);
+    }
+    dirent* p = nullptr;
+    while( (p = readdir(open_dir)) != nullptr) {
+        struct stat st;
+        if (p->d_name[0] != '.') {
+            //因为是使用devC++ 获取windows下的文件，所以使用了 "\" ,linux下要换成"/"
+           // std::string name = dir_in + std::string("\\") + std::string(p->d_name);
+			std::string name = dir_in + std::string("/") + std::string(p->d_name);
+            stat(name.c_str(), &st);
+            if (S_ISDIR(st.st_mode)) {
+                get_all_files(name, files);
+            }
+            else if (S_ISREG(st.st_mode)) {
+                files.push_back(name);
+            }
+        }
+    }
+    closedir(open_dir);
+    return true;
+}
+
