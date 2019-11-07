@@ -11,10 +11,10 @@
 #include <iostream>
 #include<thread>
 #include <vector>
-#include "netpack.h"
+#include "../common/netpack.h"
 #include <string>
 #include <functional>
-#include "MyMd5.h"
+#include "../common/MyMd5.h"
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <netinet/in.h>
