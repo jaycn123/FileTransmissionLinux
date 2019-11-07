@@ -272,7 +272,7 @@ int main(int argc, char* argv[])
                             endtime = clock();
 
                             mtx.lock();
-                            double alltime = (double)(endtime - begintime);// / CLOCKS_PER_SEC;
+                            double alltime = (double)(endtime - begintime)/ CLOCKS_PER_SEC;
                             std::cout << "begintime : " << begintime << " endtime  " << endtime  << std::endl;
                             if((mb/1048576) < alltime)
                             {
@@ -299,7 +299,7 @@ int main(int argc, char* argv[])
 
                         mtx.lock();
 
-                        double alltime = (double)(endtime - begintime);// / CLOCKS_PER_SEC;
+                        double alltime = (double)(endtime - begintime)/ CLOCKS_PER_SEC;
                         std::cout << "begintime : " << begintime << " endtime  " << endtime  << std::endl;
                         if((mb/1048576) < alltime)
                         {
