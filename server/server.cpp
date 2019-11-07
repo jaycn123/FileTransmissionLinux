@@ -9,23 +9,22 @@
 #include <cstring>
 #include <cassert>
 #include <iostream>
-#include<thread>
+#include <thread>
 #include <vector>
-#include "../common/netpack.h"
 #include <string>
-#include "../common/ThreadPool.h"
 #include <functional>
-#include "../common/MyMd5.h"
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <netinet/in.h>
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <signal.h>
-
 #include <dirent.h>
 #include <sys/stat.h>
 
+#include "../common/netpack.h"
+#include "../common/ThreadPool.h"
+#include "../common/MyMd5.h"
 
 #define PORT 8087
 #define SERVER_IP "127.0.0.1"

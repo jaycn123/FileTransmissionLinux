@@ -9,12 +9,10 @@
 #include <cstring>
 #include <cassert>
 #include <iostream>
-#include<thread>
+#include <thread>
 #include <vector>
-#include "../common/netpack.h"
 #include <string>
 #include <functional>
-#include "../common/MyMd5.h"
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <netinet/in.h>
@@ -22,6 +20,8 @@
 #include <arpa/inet.h>
 #include <mutex>
 #include <map>
+#include "../common/netpack.h"
+#include "../common/MyMd5.h"
 
 
 #define PORT 8087
@@ -180,7 +180,7 @@ int main(int argc, char* argv[])
 					break;
 				}
 
-				std::string filename = "des\\";
+				std::string filename = "des/";
 				filename.append(pHeader->filename);
 				bool isNew = true;
 				WriteFileData *pfileData = NULL;
