@@ -77,7 +77,7 @@ struct WriteFileData
 
 
 std::mutex mtx;
-long long curlength = 0;
+volatile long long curlength = 0;
 
 void printProgress(long long alllength,std::string filename)
 {
@@ -199,8 +199,8 @@ int main(int argc, char* argv[])
 				{
 					begintime = clock();
 
-					//std::thread Tprint(std::bind(printProgress, pHeader->filesize, filename));
-					//Tprint.detach();
+					std::thread Tprint(std::bind(printProgress, pHeader->filesize, filename));
+					Tprint.detach();
 
 					WriteFileData filedata;
 					filedata.fp = fopen(filename.c_str(), "wb");
