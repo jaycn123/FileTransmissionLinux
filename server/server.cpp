@@ -133,8 +133,16 @@ void DoSendData(int m_socket, std::vector<std::string>&filepath)
 			while (sendlen < length)
 			{
 				sendlen = send(m_socket, ((const char*)&sendPack) + sendlen, sizeof(sendPack) - sendlen, 0);
+			    if (sendlen == -1)
+			    {
+				    fclose(fp);
+				    close(m_socket);
+				    std::cout << "socket close " << std::endl;
+				    return;
+			    }
+
 				length -= sendlen;
-				std::cout << "buff -- " << std::endl;
+				std::cout << "buff -- " <<sendlen <<" length : "<<length << std::endl;
 			}
 
 			memset(buffer, 0, BUFFER_SIZE);

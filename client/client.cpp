@@ -199,8 +199,8 @@ int main(int argc, char* argv[])
 				{
 					begintime = clock();
 
-					std::thread Tprint(std::bind(printProgress, pHeader->filesize, filename));
-					Tprint.detach();
+					//std::thread Tprint(std::bind(printProgress, pHeader->filesize, filename));
+					//Tprint.detach();
 
 					WriteFileData filedata;
 					filedata.fp = fopen(filename.c_str(), "wb");
