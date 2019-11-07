@@ -293,6 +293,7 @@ int main(int argc, char* argv[])
 						mtx.lock();
 
 						double alltime = (double)(endtime - begintime);// / CLOCKS_PER_SEC;
+						std::cout << "begintime : " << begintime << " endtime  " << endtime  << std::endl;
 						std::cout << "usetime : " << alltime << " 速度 : " << mb / alltime << " M/s" << std::endl;
 						std::cout << "Receive File : " << pfileData->filename.c_str() << " From Server Successful !" << std::endl;
 						fclose(pfileData->fp);
