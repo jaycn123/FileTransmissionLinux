@@ -145,8 +145,9 @@ void SendService::Start()
 	get_all_files("src",m_vtFileList);
 	for(auto it : m_vtFileList)
 	{
-		return;
+		std::cout<<it<<std::endl;
 	}
+	
 	
 	if(!StartUp() || m_socket < 0)
 	{
@@ -156,6 +157,7 @@ void SendService::Start()
 
 	std::thread taccept(std::bind(&SendService::Doaccept, this, m_vtFileList));
 	taccept.join();
+	//taccept.detach();
 	std::cout << "ThreadPool over" << std::endl;
 	close(m_socket);
 }

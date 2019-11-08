@@ -6,7 +6,6 @@ int main()
 {
 	SendService sendService;
 	sendService.Start();
-
 	return 0;
 }
 
