@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../liba/libcommon.a  CMakeFiles/common.dir/recvService.cpp.o CMakeFiles/common.dir/sendService.cpp.o
+/usr/bin/ranlib ../liba/libcommon.a

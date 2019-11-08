@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -Wall   CMakeFiles/serverd.dir/server.cpp.o  -o ../bin/serverd -lpthread -lm -lcrypto -lm ../liba/libcommon.a -lpthread -lm -lcrypto -lm -lcrypto 
