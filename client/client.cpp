@@ -229,6 +229,8 @@ int main(int argc, char* argv[])
 
                 if (pHeader->wOrderindex != pfileData->index + 1)
                 {
+                    std::cout<<"pHeader->wOrderindex != pfileData->index" <<std::endl;
+
                     FileData data;
                     data.size = pHeader->wDataSize - sizeof(NetPacketHeader);
                     data.data = msg->Data;
