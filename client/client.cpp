@@ -130,10 +130,11 @@ int main(int argc, char* argv[])
     char m_cbRecvBuf[CACHE_SIZE];
     memset(buffer, 0, BUFFER_SIZE);
 
-    uint64_t  begintime, endtime;
-
+    uint64_t  begintime =0 , endtime = 0;
+    uint64_t  alldatalen = 0;
     while ((length = recv(c_socket, buffer, BUFFER_SIZE, 0)) > 0)
     {
+        alldatalen+=length;
         if ((m_nRecvSize + length) > CACHE_SIZE)
         {
             if ((m_nRecvSize - offindex) > 0)
@@ -284,6 +285,7 @@ int main(int argc, char* argv[])
                                 std::cout << "usetime : " << alltime << " 速度 : " << mb/1048576 / alltime << " M/s" << std::endl;
                             }
                             std::cout << "Receive File : " << pfileData->filename.c_str() << " From Server Successful !" << std::endl;
+                            std::cout<<"alldatalen : "<<alldatalen<<std::endl;
                             fclose(pfileData->fp);
                             std::cout << get_file_md5(pfileData->filename) << std::endl;
                             mtx.unlock();
@@ -311,6 +313,7 @@ int main(int argc, char* argv[])
                             std::cout << "usetime : " << alltime << " 速度 : " << mb/1048576 / alltime << " M/s" << std::endl;
                         }
                         std::cout << "Receive File : " << pfileData->filename.c_str() << " From Server Successful !" << std::endl;
+                        std::cout<<"alldatalen : "<<alldatalen<<std::endl;
                         fclose(pfileData->fp);
                         std::cout << get_file_md5(pfileData->filename) << std::endl;
                         mtx.unlock();
