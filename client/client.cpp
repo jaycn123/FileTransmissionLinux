@@ -30,6 +30,7 @@ std::string SERVER_IP = "127.0.0.1";
 #define BUFFER_SIZE 1576 * 10
 
 #define CACHE_SIZE 1576 * 100
+#define NowTime  time(NULL)
 
 
 long long getFileSize(char* path);
@@ -129,7 +130,7 @@ int main(int argc, char* argv[])
     char m_cbRecvBuf[CACHE_SIZE];
     memset(buffer, 0, BUFFER_SIZE);
 
-    clock_t  begintime, endtime;
+    uint64_t  begintime, endtime;
 
     while ((length = recv(c_socket, buffer, BUFFER_SIZE, 0)) > 0)
     {
@@ -197,7 +198,7 @@ int main(int argc, char* argv[])
 
                 if (isNew)
                 {
-                    begintime = clock();
+                    begintime = NowTime;
 
                     std::thread Tprint(std::bind(printProgress, pHeader->filesize, filename));
                     Tprint.detach();
@@ -269,10 +270,10 @@ int main(int argc, char* argv[])
                         {
                             long long mb = getFileSize((char*)pfileData->filename.c_str());// / 1048576;
 
-                            endtime = clock();
+                            endtime = NowTime;
 
                             mtx.lock();
-                            double alltime = (double)(endtime - begintime)/ 1000;
+                            uint64_t alltime = endtime - begintime;
                             std::cout << "begintime : " << begintime << " endtime  " << endtime  << std::endl;
                             if((mb/1048576) < alltime)
                             {
@@ -295,11 +296,11 @@ int main(int argc, char* argv[])
                     {
                         long long mb = getFileSize((char*)pfileData->filename.c_str());// / 1048576;
 
-                        endtime = clock();
+                        endtime = NowTime;
 
                         mtx.lock();
 
-                        double alltime = (double)(endtime - begintime)/ 1000;
+                        double alltime = endtime - begintime;
                         std::cout << "begintime : " << begintime << " endtime  " << endtime  << std::endl;
                         if((mb/1048576) < alltime)
                         {
