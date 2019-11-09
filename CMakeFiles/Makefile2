@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/github/FileTransmissionLinux
+CMAKE_SOURCE_DIR = /mnt/f/FileTransmissionLinux
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/github/FileTransmissionLinux
+CMAKE_BINARY_DIR = /mnt/f/FileTransmissionLinux
 
 #=============================================================================
 # Directory level rules for directory common
@@ -84,7 +84,7 @@ common/preinstall:
 common/CMakeFiles/common.dir/all:
 	$(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/depend
 	$(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github/FileTransmissionLinux/CMakeFiles --progress-num=3,4,5 "Built target common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/f/FileTransmissionLinux/CMakeFiles --progress-num=3,4,5 "Built target common"
 .PHONY : common/CMakeFiles/common.dir/all
 
 # Include target in all.
@@ -94,9 +94,9 @@ all: common/CMakeFiles/common.dir/all
 
 # Build rule for subdir invocation for target.
 common/CMakeFiles/common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github/FileTransmissionLinux/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/FileTransmissionLinux/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 common/CMakeFiles/common.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github/FileTransmissionLinux/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/FileTransmissionLinux/CMakeFiles 0
 .PHONY : common/CMakeFiles/common.dir/rule
 
 # Convenience name for target.
@@ -139,7 +139,7 @@ client/preinstall:
 client/CMakeFiles/client.dir/all: common/CMakeFiles/common.dir/all
 	$(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/depend
 	$(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github/FileTransmissionLinux/CMakeFiles --progress-num=1,2 "Built target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/f/FileTransmissionLinux/CMakeFiles --progress-num=1,2 "Built target client"
 .PHONY : client/CMakeFiles/client.dir/all
 
 # Include target in all.
@@ -149,9 +149,9 @@ all: client/CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
 client/CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github/FileTransmissionLinux/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/FileTransmissionLinux/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 client/CMakeFiles/client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github/FileTransmissionLinux/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/FileTransmissionLinux/CMakeFiles 0
 .PHONY : client/CMakeFiles/client.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ server/preinstall:
 server/CMakeFiles/serverd.dir/all: common/CMakeFiles/common.dir/all
 	$(MAKE) -f server/CMakeFiles/serverd.dir/build.make server/CMakeFiles/serverd.dir/depend
 	$(MAKE) -f server/CMakeFiles/serverd.dir/build.make server/CMakeFiles/serverd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github/FileTransmissionLinux/CMakeFiles --progress-num=6,7 "Built target serverd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/f/FileTransmissionLinux/CMakeFiles --progress-num=6,7 "Built target serverd"
 .PHONY : server/CMakeFiles/serverd.dir/all
 
 # Include target in all.
@@ -204,9 +204,9 @@ all: server/CMakeFiles/serverd.dir/all
 
 # Build rule for subdir invocation for target.
 server/CMakeFiles/serverd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github/FileTransmissionLinux/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/FileTransmissionLinux/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 server/CMakeFiles/serverd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github/FileTransmissionLinux/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/FileTransmissionLinux/CMakeFiles 0
 .PHONY : server/CMakeFiles/serverd.dir/rule
 
 # Convenience name for target.

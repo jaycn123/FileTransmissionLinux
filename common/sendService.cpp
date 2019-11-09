@@ -32,6 +32,9 @@ bool SendService::StartUp()
 
 void SendService::DoSendData(int c_socket, std::vector<std::string>&filepath)
 {
+	std::string ip;
+	int port;
+	get_peer_ip_port(c_socket,ip,port);
 	//printf("now pid is %d", GetCurrentProcessId());
 	//printf("now tid is %d \n", GetCurrentThreadId());
 	for (auto it : filepath)

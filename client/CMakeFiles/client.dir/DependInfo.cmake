@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/github/FileTransmissionLinux/client/client.cpp" "/home/ubuntu/github/FileTransmissionLinux/client/CMakeFiles/client.dir/client.cpp.o"
+  "/mnt/f/FileTransmissionLinux/client/client.cpp" "/mnt/f/FileTransmissionLinux/client/CMakeFiles/client.dir/client.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -14,7 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ubuntu/github/FileTransmissionLinux/common/CMakeFiles/common.dir/DependInfo.cmake"
+  "/mnt/f/FileTransmissionLinux/common/CMakeFiles/common.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

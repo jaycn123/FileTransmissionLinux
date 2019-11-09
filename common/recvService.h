@@ -3,7 +3,7 @@
 
 #include "common.h"
 #include "netpack.h"
-#include "fileTool.h"
+#include "tool.h"
 
 struct FileData
 {

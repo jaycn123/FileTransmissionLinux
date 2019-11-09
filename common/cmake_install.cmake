@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/github/FileTransmissionLinux/common
+# Install script for directory: /mnt/f/FileTransmissionLinux/common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

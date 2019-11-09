@@ -3,7 +3,7 @@
 
 client/CMakeFiles/client.dir/client.cpp.o: client/client.cpp
 client/CMakeFiles/client.dir/client.cpp.o: common/common.h
-client/CMakeFiles/client.dir/client.cpp.o: common/fileTool.h
 client/CMakeFiles/client.dir/client.cpp.o: common/netpack.h
 client/CMakeFiles/client.dir/client.cpp.o: common/recvService.h
+client/CMakeFiles/client.dir/client.cpp.o: common/tool.h
 

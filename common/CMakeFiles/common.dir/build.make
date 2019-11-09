@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/github/FileTransmissionLinux
+CMAKE_SOURCE_DIR = /mnt/f/FileTransmissionLinux
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/github/FileTransmissionLinux
+CMAKE_BINARY_DIR = /mnt/f/FileTransmissionLinux
 
 # Include any dependencies generated for this target.
 include common/CMakeFiles/common.dir/depend.make
@@ -59,16 +59,16 @@ include common/CMakeFiles/common.dir/flags.make
 
 common/CMakeFiles/common.dir/recvService.cpp.o: common/CMakeFiles/common.dir/flags.make
 common/CMakeFiles/common.dir/recvService.cpp.o: common/recvService.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/github/FileTransmissionLinux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object common/CMakeFiles/common.dir/recvService.cpp.o"
-	cd /home/ubuntu/github/FileTransmissionLinux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/recvService.cpp.o -c /home/ubuntu/github/FileTransmissionLinux/common/recvService.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/FileTransmissionLinux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object common/CMakeFiles/common.dir/recvService.cpp.o"
+	cd /mnt/f/FileTransmissionLinux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/recvService.cpp.o -c /mnt/f/FileTransmissionLinux/common/recvService.cpp
 
 common/CMakeFiles/common.dir/recvService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/recvService.cpp.i"
-	cd /home/ubuntu/github/FileTransmissionLinux/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/github/FileTransmissionLinux/common/recvService.cpp > CMakeFiles/common.dir/recvService.cpp.i
+	cd /mnt/f/FileTransmissionLinux/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/FileTransmissionLinux/common/recvService.cpp > CMakeFiles/common.dir/recvService.cpp.i
 
 common/CMakeFiles/common.dir/recvService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/recvService.cpp.s"
-	cd /home/ubuntu/github/FileTransmissionLinux/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/github/FileTransmissionLinux/common/recvService.cpp -o CMakeFiles/common.dir/recvService.cpp.s
+	cd /mnt/f/FileTransmissionLinux/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/FileTransmissionLinux/common/recvService.cpp -o CMakeFiles/common.dir/recvService.cpp.s
 
 common/CMakeFiles/common.dir/recvService.cpp.o.requires:
 
@@ -83,16 +83,16 @@ common/CMakeFiles/common.dir/recvService.cpp.o.provides.build: common/CMakeFiles
 
 common/CMakeFiles/common.dir/sendService.cpp.o: common/CMakeFiles/common.dir/flags.make
 common/CMakeFiles/common.dir/sendService.cpp.o: common/sendService.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/github/FileTransmissionLinux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object common/CMakeFiles/common.dir/sendService.cpp.o"
-	cd /home/ubuntu/github/FileTransmissionLinux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/sendService.cpp.o -c /home/ubuntu/github/FileTransmissionLinux/common/sendService.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/f/FileTransmissionLinux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object common/CMakeFiles/common.dir/sendService.cpp.o"
+	cd /mnt/f/FileTransmissionLinux/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/sendService.cpp.o -c /mnt/f/FileTransmissionLinux/common/sendService.cpp
 
 common/CMakeFiles/common.dir/sendService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/sendService.cpp.i"
-	cd /home/ubuntu/github/FileTransmissionLinux/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/github/FileTransmissionLinux/common/sendService.cpp > CMakeFiles/common.dir/sendService.cpp.i
+	cd /mnt/f/FileTransmissionLinux/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/f/FileTransmissionLinux/common/sendService.cpp > CMakeFiles/common.dir/sendService.cpp.i
 
 common/CMakeFiles/common.dir/sendService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/sendService.cpp.s"
-	cd /home/ubuntu/github/FileTransmissionLinux/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/github/FileTransmissionLinux/common/sendService.cpp -o CMakeFiles/common.dir/sendService.cpp.s
+	cd /mnt/f/FileTransmissionLinux/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/f/FileTransmissionLinux/common/sendService.cpp -o CMakeFiles/common.dir/sendService.cpp.s
 
 common/CMakeFiles/common.dir/sendService.cpp.o.requires:
 
@@ -117,9 +117,9 @@ liba/libcommon.a: common/CMakeFiles/common.dir/recvService.cpp.o
 liba/libcommon.a: common/CMakeFiles/common.dir/sendService.cpp.o
 liba/libcommon.a: common/CMakeFiles/common.dir/build.make
 liba/libcommon.a: common/CMakeFiles/common.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/github/FileTransmissionLinux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../liba/libcommon.a"
-	cd /home/ubuntu/github/FileTransmissionLinux/common && $(CMAKE_COMMAND) -P CMakeFiles/common.dir/cmake_clean_target.cmake
-	cd /home/ubuntu/github/FileTransmissionLinux/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/common.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/f/FileTransmissionLinux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../liba/libcommon.a"
+	cd /mnt/f/FileTransmissionLinux/common && $(CMAKE_COMMAND) -P CMakeFiles/common.dir/cmake_clean_target.cmake
+	cd /mnt/f/FileTransmissionLinux/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/common.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 common/CMakeFiles/common.dir/build: liba/libcommon.a
@@ -132,10 +132,10 @@ common/CMakeFiles/common.dir/requires: common/CMakeFiles/common.dir/sendService.
 .PHONY : common/CMakeFiles/common.dir/requires
 
 common/CMakeFiles/common.dir/clean:
-	cd /home/ubuntu/github/FileTransmissionLinux/common && $(CMAKE_COMMAND) -P CMakeFiles/common.dir/cmake_clean.cmake
+	cd /mnt/f/FileTransmissionLinux/common && $(CMAKE_COMMAND) -P CMakeFiles/common.dir/cmake_clean.cmake
 .PHONY : common/CMakeFiles/common.dir/clean
 
 common/CMakeFiles/common.dir/depend:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/github/FileTransmissionLinux /home/ubuntu/github/FileTransmissionLinux/common /home/ubuntu/github/FileTransmissionLinux /home/ubuntu/github/FileTransmissionLinux/common /home/ubuntu/github/FileTransmissionLinux/common/CMakeFiles/common.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/f/FileTransmissionLinux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/f/FileTransmissionLinux /mnt/f/FileTransmissionLinux/common /mnt/f/FileTransmissionLinux /mnt/f/FileTransmissionLinux/common /mnt/f/FileTransmissionLinux/common/CMakeFiles/common.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : common/CMakeFiles/common.dir/depend
 

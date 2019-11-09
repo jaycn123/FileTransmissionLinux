@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/github/FileTransmissionLinux
+CMAKE_SOURCE_DIR = /mnt/f/FileTransmissionLinux
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/github/FileTransmissionLinux
+CMAKE_BINARY_DIR = /mnt/f/FileTransmissionLinux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/github/FileTransmissionLinux && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github/FileTransmissionLinux/CMakeFiles /home/ubuntu/github/FileTransmissionLinux/common/CMakeFiles/progress.marks
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github/FileTransmissionLinux/CMakeFiles 0
+	cd /mnt/f/FileTransmissionLinux && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/FileTransmissionLinux/CMakeFiles /mnt/f/FileTransmissionLinux/common/CMakeFiles/progress.marks
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/FileTransmissionLinux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 common/clean
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 common/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/f/FileTransmissionLinux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 common/CMakeFiles/common.dir/rule:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 common/CMakeFiles/common.dir/rule
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 common/CMakeFiles/common.dir/rule
 .PHONY : common/CMakeFiles/common.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ common: common/CMakeFiles/common.dir/rule
 
 # fast build rule for target.
 common/fast:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
 .PHONY : common/fast
 
 recvService.o: recvService.cpp.o
@@ -131,7 +131,7 @@ recvService.o: recvService.cpp.o
 
 # target to build an object file
 recvService.cpp.o:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/recvService.cpp.o
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/recvService.cpp.o
 .PHONY : recvService.cpp.o
 
 recvService.i: recvService.cpp.i
@@ -140,7 +140,7 @@ recvService.i: recvService.cpp.i
 
 # target to preprocess a source file
 recvService.cpp.i:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/recvService.cpp.i
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/recvService.cpp.i
 .PHONY : recvService.cpp.i
 
 recvService.s: recvService.cpp.s
@@ -149,7 +149,7 @@ recvService.s: recvService.cpp.s
 
 # target to generate assembly for a file
 recvService.cpp.s:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/recvService.cpp.s
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/recvService.cpp.s
 .PHONY : recvService.cpp.s
 
 sendService.o: sendService.cpp.o
@@ -158,7 +158,7 @@ sendService.o: sendService.cpp.o
 
 # target to build an object file
 sendService.cpp.o:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sendService.cpp.o
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sendService.cpp.o
 .PHONY : sendService.cpp.o
 
 sendService.i: sendService.cpp.i
@@ -167,7 +167,7 @@ sendService.i: sendService.cpp.i
 
 # target to preprocess a source file
 sendService.cpp.i:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sendService.cpp.i
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sendService.cpp.i
 .PHONY : sendService.cpp.i
 
 sendService.s: sendService.cpp.s
@@ -176,7 +176,7 @@ sendService.s: sendService.cpp.s
 
 # target to generate assembly for a file
 sendService.cpp.s:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sendService.cpp.s
+	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sendService.cpp.s
 .PHONY : sendService.cpp.s
 
 # Help Target
@@ -205,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/github/FileTransmissionLinux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/f/FileTransmissionLinux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

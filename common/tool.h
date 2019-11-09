@@ -1,5 +1,3 @@
-#ifndef FILETOOL_H
-#define FILETOOL_H
 
 #include "common.h"
 
@@ -124,5 +122,39 @@ static std::string GetCurrentExeDir()
 	return std::string(szPath);
 }
 
+static bool findstr(std::string& srctr, std::string& fstr)
+{
+    auto position = srctr.find(fstr);
+    if (position != srctr.npos)  
+    {
+         return true;
+   	}
+    return false;
+}
 
-#endif
+static void get_peer_ip_port(int fd, std::string& ip, int &port)
+{
+    int client_fd = fd;
+    
+    // discovery client information
+    struct sockaddr_in addr;
+    socklen_t addrlen = sizeof(addr);
+    if(getpeername(client_fd, (struct sockaddr*)&addr, &addrlen) == -1){
+        fprintf(stderr,"discovery client information failed, fd=%d, errno=%d(%#x).\n", client_fd, errno, errno);        
+        return;
+    }
+ 
+    // ip v4 or v6
+    char *buf = (char*)malloc(INET6_ADDRSTRLEN);
+    memset(buf, 0, INET6_ADDRSTRLEN);
+    
+    if((inet_ntop(addr.sin_family, &addr.sin_addr, buf, INET6_ADDRSTRLEN)) == NULL){
+	fprintf(stderr,"convert client information failed, fd=%d, errno=%d(%#x).\n", client_fd, errno, errno);        
+        return;
+    }
+    port = ntohs(addr.sin_port);
+    fprintf(stdout, "get peer ip of client ip=%s, port=%d, fd=%d\n", buf, port, client_fd);
+    ip = buf;
+	
+    return;
+}
