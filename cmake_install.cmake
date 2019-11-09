@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/f/FileTransmissionLinux
+# Install script for directory: /home/ubuntu/github/FileTransmissionLinux
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/f/FileTransmissionLinux/common/cmake_install.cmake")
-  include("/mnt/f/FileTransmissionLinux/client/cmake_install.cmake")
-  include("/mnt/f/FileTransmissionLinux/server/cmake_install.cmake")
+  include("/home/ubuntu/github/FileTransmissionLinux/common/cmake_install.cmake")
+  include("/home/ubuntu/github/FileTransmissionLinux/client/cmake_install.cmake")
+  include("/home/ubuntu/github/FileTransmissionLinux/server/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/f/FileTransmissionLinux/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/github/FileTransmissionLinux/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

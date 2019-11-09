@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/f/FileTransmissionLinux/common/recvService.cpp" "/mnt/f/FileTransmissionLinux/common/CMakeFiles/common.dir/recvService.cpp.o"
-  "/mnt/f/FileTransmissionLinux/common/sendService.cpp" "/mnt/f/FileTransmissionLinux/common/CMakeFiles/common.dir/sendService.cpp.o"
+  "/home/ubuntu/github/FileTransmissionLinux/common/recvService.cpp" "/home/ubuntu/github/FileTransmissionLinux/common/CMakeFiles/common.dir/recvService.cpp.o"
+  "/home/ubuntu/github/FileTransmissionLinux/common/sendService.cpp" "/home/ubuntu/github/FileTransmissionLinux/common/CMakeFiles/common.dir/sendService.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

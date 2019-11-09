@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/f/FileTransmissionLinux/client
+# Install script for directory: /home/ubuntu/github/FileTransmissionLinux/client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

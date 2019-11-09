@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/f/FileTransmissionLinux
+CMAKE_SOURCE_DIR = /home/ubuntu/github/FileTransmissionLinux
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/f/FileTransmissionLinux
+CMAKE_BINARY_DIR = /home/ubuntu/github/FileTransmissionLinux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/f/FileTransmissionLinux && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/FileTransmissionLinux/CMakeFiles /mnt/f/FileTransmissionLinux/server/CMakeFiles/progress.marks
-	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 server/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/FileTransmissionLinux/CMakeFiles 0
+	cd /home/ubuntu/github/FileTransmissionLinux && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github/FileTransmissionLinux/CMakeFiles /home/ubuntu/github/FileTransmissionLinux/server/CMakeFiles/progress.marks
+	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 server/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github/FileTransmissionLinux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 server/clean
+	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 server/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
+	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
+	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 server/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/f/FileTransmissionLinux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/github/FileTransmissionLinux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 server/CMakeFiles/serverd.dir/rule:
-	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 server/CMakeFiles/serverd.dir/rule
+	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f CMakeFiles/Makefile2 server/CMakeFiles/serverd.dir/rule
 .PHONY : server/CMakeFiles/serverd.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ serverd: server/CMakeFiles/serverd.dir/rule
 
 # fast build rule for target.
 serverd/fast:
-	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f server/CMakeFiles/serverd.dir/build.make server/CMakeFiles/serverd.dir/build
+	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f server/CMakeFiles/serverd.dir/build.make server/CMakeFiles/serverd.dir/build
 .PHONY : serverd/fast
 
 server.o: server.cpp.o
@@ -131,7 +131,7 @@ server.o: server.cpp.o
 
 # target to build an object file
 server.cpp.o:
-	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f server/CMakeFiles/serverd.dir/build.make server/CMakeFiles/serverd.dir/server.cpp.o
+	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f server/CMakeFiles/serverd.dir/build.make server/CMakeFiles/serverd.dir/server.cpp.o
 .PHONY : server.cpp.o
 
 server.i: server.cpp.i
@@ -140,7 +140,7 @@ server.i: server.cpp.i
 
 # target to preprocess a source file
 server.cpp.i:
-	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f server/CMakeFiles/serverd.dir/build.make server/CMakeFiles/serverd.dir/server.cpp.i
+	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f server/CMakeFiles/serverd.dir/build.make server/CMakeFiles/serverd.dir/server.cpp.i
 .PHONY : server.cpp.i
 
 server.s: server.cpp.s
@@ -149,7 +149,7 @@ server.s: server.cpp.s
 
 # target to generate assembly for a file
 server.cpp.s:
-	cd /mnt/f/FileTransmissionLinux && $(MAKE) -f server/CMakeFiles/serverd.dir/build.make server/CMakeFiles/serverd.dir/server.cpp.s
+	cd /home/ubuntu/github/FileTransmissionLinux && $(MAKE) -f server/CMakeFiles/serverd.dir/build.make server/CMakeFiles/serverd.dir/server.cpp.s
 .PHONY : server.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/f/FileTransmissionLinux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/github/FileTransmissionLinux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

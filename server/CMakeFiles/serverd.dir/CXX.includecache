@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/f/FileTransmissionLinux/common/common.h
+/home/ubuntu/github/FileTransmissionLinux/common/common.h
 cstdio
 -
 cstdlib
@@ -52,21 +52,21 @@ dirent.h
 sys/stat.h
 -
 
-/mnt/f/FileTransmissionLinux/common/fileTool.h
+/home/ubuntu/github/FileTransmissionLinux/common/fileTool.h
 common.h
-/mnt/f/FileTransmissionLinux/common/common.h
+/home/ubuntu/github/FileTransmissionLinux/common/common.h
 
-/mnt/f/FileTransmissionLinux/common/netpack.h
+/home/ubuntu/github/FileTransmissionLinux/common/netpack.h
 
-/mnt/f/FileTransmissionLinux/common/sendService.h
+/home/ubuntu/github/FileTransmissionLinux/common/sendService.h
 common.h
-/mnt/f/FileTransmissionLinux/common/common.h
+/home/ubuntu/github/FileTransmissionLinux/common/common.h
 netpack.h
-/mnt/f/FileTransmissionLinux/common/netpack.h
+/home/ubuntu/github/FileTransmissionLinux/common/netpack.h
 fileTool.h
-/mnt/f/FileTransmissionLinux/common/fileTool.h
+/home/ubuntu/github/FileTransmissionLinux/common/fileTool.h
 
-/mnt/f/FileTransmissionLinux/server/server.cpp
+/home/ubuntu/github/FileTransmissionLinux/server/server.cpp
 ../common/sendService.h
-/mnt/f/FileTransmissionLinux/common/sendService.h
+/home/ubuntu/github/FileTransmissionLinux/common/sendService.h
 
